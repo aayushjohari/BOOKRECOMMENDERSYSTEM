@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Book Recommender System</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(to right, #e2e2e2, #f8f9fa);
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            border-radius: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar-nav > li > a {
+            color: #fff !important;
+            font-size: 16px;
+        }
+        .navbar-nav > li > a:hover {
+            background-color: #0056b3;
+            color: #fff !important;
+        }
+        .jumbotron {
+            background: url('https://source.unsplash.com/1600x900/?contact,communication') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 0;
+            margin-bottom: 30px;
+        }
+        .jumbotron h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .jumbotron p {
+            font-size: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .form-group label {
+            font-size: 16px;
+        }
+        .form-control {
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .btn-primary {
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-default" style="background-color:#007bff">
+        <div class="container">
+            <a class="navbar-brand" href="#">BookRec</a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/recommendations">Recommendations</a></li>
+                <li><a href="/categories">Categories</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/contact_us">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Get in touch with us below.</p>
+    </div>
+
+    <div class="container">
+        <div class="row section">
+            <div class="col-md-12">
+                <h2>Contact Form</h2>
+                <form action="/contactus" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row section">
+            <div class="col-md-12 contact-info">
+                <h2>Contact Information</h2>
+                <p>For any inquiries or support, please contact us:</p>
+                <p>Email: <a href="mailto:support@bookrec.com">support@bookrec.com</a></p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Book Street, Reading City, ABC 12345</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
